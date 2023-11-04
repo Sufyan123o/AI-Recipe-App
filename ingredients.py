@@ -15,21 +15,4 @@ def delete_ingredient(state):
     state.text = "Button Pressed"
     
 
-
-text = "Original text"
-
-# Definition of the page
-page = """
-# Ingredients Cart
-
-<|layout|columns=1 1|
-Ingredient
-
-<|X|button|on_action=delete_ingredient|>
-|>
-
-<|Generate Reciples|button|on_action=generate_recipes_clicked|>
-"""
-
-
 Gui(page).run(use_reloader=True, port=8008)
