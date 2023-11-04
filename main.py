@@ -1,11 +1,11 @@
 from taipy.gui import Gui, navigate
-from pages.home import home_md
-from pages.temperature import temperature_md
+from home import home_md
+from ingredients import ingredients_md
 
 pages = {
     "/": "<|menu|lov={page_names}|on_action=menu_action|>",
     "home": home_md,
-    "temperature": temperature_md,
+    "ingredients": ingredients_md,
 }
 page_names = [page for page in pages.keys() if page != "/"]
 
@@ -14,4 +14,4 @@ def menu_action(state, action, payload):
     navigate(state, page)
 
 gui = Gui(pages=pages)
-gui.run(run_browser=False, use_reloader=True)
+gui.run(run_browser=False, use_reloader=True, port = 8008)
