@@ -13,6 +13,21 @@ def generate_recipes_clicked(state):
 def delete_ingredient(state):
     notify(state, 'info', f'The text is: {state.text}')
     state.text = "Button Pressed"
-    
 
-Gui(page).run(use_reloader=True, port=8008)
+text = "Original text"
+
+# Definition of the page
+ingredients_md = """
+# Ingredients Cart
+
+<|layout|columns=1 1|
+Ingredient
+
+<|X|button|on_action=delete_ingredient|>
+|>
+
+<|Generate Reciples|button|on_action=generate_recipes_clicked|>
+"""
+
+# Gui(page).run(use_reloader=True, port=8008)
+### This is a test!!
