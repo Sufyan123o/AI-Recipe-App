@@ -1,27 +1,17 @@
-from taipy.gui import Gui, notify
+from taipy.gui import Gui, navigate
+from pages.home import home_md
+from pages.temperature import temperature_md
 
-text = "Original text"
+pages = {
+    "/": "<|menu|lov={page_names}|on_action=menu_action|>",
+    "home": home_md,
+    "temperature": temperature_md,
+}
+page_names = [page for page in pages.keys() if page != "/"]
 
-# Definition of the page
-page = """
-# Ingredients Cart
+def menu_action(state, action, payload):
+    page = payload["args"][0]
+    navigate(state, page)
 
-<|layout|columns=1 1|
-Ingredient
-
-<|X|button|>
-|>
-
-<|Generate Reciples|button|on_action=generate_recipes_clicked|>
-"""
-
-def generate_recipes_clicked(state):
-    notify(state, 'info', f'The text is: {state.text}')
-    state.text = "Button Pressed"
-
-def on_change(state, var_name, var_value):
-    if var_name == "text" and var_value == "Reset":
-        state.text = ""
-        return
-
-Gui(page).run(use_reloader=True, port=8008)
+gui = Gui(pages=pages)
+gui.run(run_browser=False, use_reloader=True)
