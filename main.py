@@ -6,6 +6,7 @@ pages = {
     "/": "<|menu|lov={page_names}|on_action=menu_action|>",
     "home": home_md,
     "ingredients": ingredients_md,
+    "recipes": "recipes_md",
 }
 page_names = [page for page in pages.keys() if page != "/"]
 
