@@ -14,9 +14,10 @@ def accessibility_mode(state):
     state.scenario.accessibility_mode.click()
     
 text = "Show Your Ingredients:"
-
 home_md = Markdown("""
-# Home
+# Cookaid
+## Home
+
 <|{text}|>
 
 <|submit|button|on_action=submit_scenario|>
