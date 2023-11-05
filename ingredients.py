@@ -14,11 +14,11 @@ def delete_ingredient(state):
     notify(state, 'info', f'The text is: {state.text}')
     state.text = "Button Pressed"
 
-text = "Original text"
 
 # Definition of the page
 ingredients_md = """
 # Ingredients Cart
+
 
 <|layout|columns=1 1|
 Ingredient
@@ -27,7 +27,14 @@ Ingredient
 |>
 
 <|Generate Reciples|button|on_action=generate_recipes_clicked|>
+
+<|layout|columns=1fr auto 1fr|class_name=container align_columns_center|
+<|part|class_name=pt_half pb_half|
+<|Taipy App|text|>
+|>
+
+
+|>
 """
 
-# Gui(page).run(use_reloader=True, port=8008)
-### This is a test!!
+

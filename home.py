@@ -25,4 +25,7 @@ home_md = Markdown("""
 <|✓|button|>
 <|X|button|>
 
+<|part|class_name=text_right|
+<|toggle|theme|class_name=relative nolabel|>
+|>
 """)
