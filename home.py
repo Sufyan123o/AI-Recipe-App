@@ -1,5 +1,5 @@
 from taipy.gui import Markdown
-
+import cv2
 
 
 def camera():
@@ -12,12 +12,16 @@ def submit_scenario(state):
 
 def accessibility_mode(state):
     state.scenario.accessibility_mode.click()
-    
-text = "Show Your Ingredients:"
+
+
+
+text = "Show Your Ingredients:" 
+
 
 home_md = Markdown("""
 # Home
 <|{text}|>
+
 
 <|submit|button|on_action=submit_scenario|>
 <|Accesibility Mode|button|on_action=accessibility_mode|>
@@ -26,3 +30,4 @@ home_md = Markdown("""
 <|X|button|>
 
 """)
+
