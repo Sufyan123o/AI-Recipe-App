@@ -1,4 +1,10 @@
+<p align="center">
+  <a href="https://discord.gg/b6zyJyCQUu">
+    <img src="https://cdn.discordapp.com/attachments/597104422123995136/1172330024406355989/medium.png?ex=655fec6a&is=654d776a&hm=d961a6c6ca29e1ade50b713e3f295bb351c139183e043b04a98709bbd04ba09b&" alt="Logo" width="auto" height="180">
+  </a>
+  
 # Cook-Aid
+
 
 Welcome to "Cook-Aid"
 This is our Durhack 2023 submission, an aid application for visually-impared users (VIUs) to ease their cooking process. Our application scans in the ingredients you have at your disposal, optimized to the use of a phone camera and/or the ADLINK Neon-202B-JT2-X (sensor dimensions: 1600 1200) industrial machine vision and AI smart camera, and then generates 3 recipes that you can make with what's available to you.
