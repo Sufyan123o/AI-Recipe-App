@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://discord.gg/b6zyJyCQUu">
     <img src="https://cdn.discordapp.com/attachments/597104422123995136/1172330024406355989/medium.png?ex=655fec6a&is=654d776a&hm=d961a6c6ca29e1ade50b713e3f295bb351c139183e043b04a98709bbd04ba09b&" alt="Logo" width="auto" height="180">
+    <img src="https://cdn.discordapp.com/attachments/597104422123995136/1172330651609989120/image.png?ex=655fed00&is=654d7800&hm=aadfcd16651bbff72ca2d46b5072dd1502bf05716b5f1a759ef9b15e52dec97b&" alt="Logo" width="auto" height="180">
   </a>
   
 # Cook-Aid
